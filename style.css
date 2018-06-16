@@ -1,0 +1,71 @@
+html {
+    height: 100%;
+    margin:0;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+    #container {
+      disblay: block;
+      position: relative;
+      width: 500px;
+      min-width: 500px;
+      height: 300px;
+      background-color: #eee;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+      overflow: hidden;
+      
+    }
+  
+    #container__blocks {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      transition: left 0.5s;
+    }
+      .item {
+        display: inline-block;
+        heigth: 100%;
+        background-color: pink;
+        float: left;
+        margin: 0;
+      }
+      .nav {
+        display: inline-block;
+        margin-top: 15px;
+      }
+          #prev {
+            display: block;
+            float:left;
+            width: 40px;
+            height: 40px;
+            background-image: url(http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911640directionalleft.png);
+            background-size: cover;
+            
+          }
+  
+          #next {
+            display: block;
+            float: left;
+            width: 40px;
+            height: 40px;
+            background-image: url(http://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w128h1281338911579directionalright.png);
+            background-size: cover;
+            margin-left: 15px;
+            
+          }
+  
+          #prev:hover, #next:hover {
+            cursor: pointer;
+          }
+  
