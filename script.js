@@ -15,14 +15,14 @@ Array.from(widthItem).forEach(element => {
 
 widthAll.style.width = sumWidth + "px";
 
-btnNext.addEventListener("click", function(event) {
+btnNext.addEventListener("click", event => {
     if (Math.abs(widthAll.offsetLeft) <= widthContainer)
      widthAll.style.left = widthAll.offsetLeft - widthContainer + "px";
   else
     event.preventDefault();
 });
 
-btnPrev.addEventListener("click", function() {
+btnPrev.addEventListener("click", () => {
   if (widthAll.offsetLeft == 0)
     event.preventDefault();
   else
